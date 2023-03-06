@@ -1,0 +1,225 @@
+:root{
+    --black-gradient: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    --color-main-letters: white;
+    --main-blue: #45567d;
+    --second-blue: #36425e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.main-menu{
+    position: fixed;
+    width: 100%;
+    background-color: var(--main-blue);
+    font-weight: 500;
+    color: var(--color-main-letters);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem 2rem;
+    list-style-type: none;
+}
+
+.menu-item{
+    color: var(--color-main-letters);
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.main{
+    display: flex;
+    background: var(--black-gradient);
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-main-letters);
+    padding: 4rem 0.5rem 1rem 0.5rem;
+    font-weight: bold;
+    border-bottom: 5px solid var(--main-blue);
+}
+
+.main > *{
+    margin-top: 1rem;
+}
+
+.profile{
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.profile-description{
+    text-align: center;
+}
+
+.download{
+    background: var(--main-blue);
+    color: var(--color-main-letters);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+}
+
+.download:hover{
+    background: var(--second-blue);
+    transform: scale(1.1);
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons a:nth-child(2) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container > * {
+    margin-top: 1rem;
+}
+
+.projectmb-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone{
+    max-width: 200px;
+    border-radius: 5%;
+    border-top: 1rem solid black;
+    border-left: 0.5rem solid black;
+    border-right: 0.5rem solid black;
+    border-bottom: 1rem solid black;
+}
+
+.description{
+    padding: 1.5rem;
+}
+
+.source-code{
+    display: flex;
+    width: 13rem;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    background: var(--black-gradient);
+    color: var(--color-main-letters);
+    text-decoration: none;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.source-icon{
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+.projectdesk-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desktop{
+    max-width: 70%;
+}
+
+.certificates{
+    background-image: var(--black-gradient);
+    color: var(--color-main-letters);
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    font-weight: bold;
+    border-top: 5px solid var(--main-blue);
+}
+
+.grid-container{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.cell-certificate{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+.img-certificate{
+    width: 100%;
+    object-fit: fill;
+    height: calc(100% - 5rem);
+}
+
+.p-certificate{
+    text-align: center;
+    padding: 1rem;
+    background: var(--main-blue);
+   
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-blue);
+    color: var(--color-main-letters);
+    padding: 1rem 2rem;
+    font-weight: 300;
+}
+
+.footer-icon{
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin-left: 1rem;
+}
+
+.footer-icon:hover{
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 700px) {
+    .projectmb-container{
+        flex-direction: row;
+    }
+    .desktop{
+        max-width: 40%;
+    }
+}
+
